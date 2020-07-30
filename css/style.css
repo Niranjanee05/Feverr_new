@@ -1,0 +1,204 @@
+:root {
+    --green: #00b30c;
+    --gray1: #353537;
+    --gray2: #eaeaeb;
+    --gray3: #777777;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700 !important;
+}
+
+h2 {
+    font-size: 3rem !important;
+}
+
+header {
+    background-image: url(../img/hero.jpg);
+    min-height: 30rem;
+    background-size: cover;
+}
+
+a.btn-outline-light:hover {
+    color: black !important;
+}
+
+.header .nav-link {
+    color: white !important;
+}
+
+.caption {
+    min-height: 25rem;
+}
+
+.title {
+    font-weight: 700;
+}
+
+.category p {
+    opacity: 0;
+    padding-top: 30px;
+    transition: all 0.2s ease;
+}
+
+.category {
+    padding-bottom: 60px;
+    overflow: hidden;
+    height: calc(auto+30px);
+}
+
+.category h3::before {
+    content: "";
+    display: block;
+    margin: 5px auto 20px auto;
+    height: 1px;
+    width: 60px;
+    background-color: #00b30c;
+    transition: all .3s ease;
+}
+
+.category:hover h3:before {
+    width: 180px;
+}
+
+.category:hover p {
+    opacity: 1;
+    display: block;
+    padding-top: 10px;
+    color: black;
+}
+
+.category h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+
+.first-steps .row>div {
+    flex: 1 0 calc(50% - 1rem);
+}
+
+@media (min-width: 992px) {
+    .first-steps .row>div {
+        flex: 0 1 calc(20% - 1rem);
+    }
+}
+
+.first-steps .description {
+    height: 20rem;
+    background-size: cover;
+}
+
+.first-steps .description p {
+    font-size: .9rem;
+}
+
+.first-steps .description span {
+    display: block;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.first-steps .logo {
+    background-image: url(../img/service_1.png);
+}
+
+.first-steps .social-media {
+    background-image: url(../img/service_2.png);
+}
+
+.first-steps .audio {
+    background-image: url(../img/service_3.png);
+}
+
+.first-steps .translate {
+    background-image: url(../img/service_4.png);
+}
+
+.first-steps .wordpress {
+    background-image: url(../img/service_5.png);
+}
+
+.benefits .row {
+    height: 20rem;
+}
+
+.item h3 {
+    font-weight: 300;
+}
+
+.item h3 span {
+    font-weight: 700;
+}
+
+.testimonials {
+    background-color: #eaeaeb;
+}
+
+.testimonials .carousel {
+    background-color: white;
+}
+
+.testimonials .carousel-item h4 {
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+.testimonials .carousel-item blockquote {
+    font-size: 1.8rem;
+    color: #676767;
+    font-style: italic;
+}
+
+.testimonials .carousel-item p {
+    font-size: .8rem;
+}
+
+.card {
+    margin-bottom: 1rem;
+}
+
+.card-title {
+    font-size: 1.2rem;
+}
+
+.footer {
+    border-top: 1px solid #eaeaeb;
+}
+
+.footer h3 {
+    color: #777777;
+    font-size: 1.2rem;
+}
+
+.footer .nav-link {
+    color: #777777!important;
+    padding: .5rem 0;
+    font-size: 1rem;
+}
+
+.footer .container-fluid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer .container-fluid>div {
+    justify-content: space-between;
+    flex: 0 0 calc(50% - 1rem);
+    padding: 1rem;
+}
+
+@media (min-width: 768px) {
+    .footer .container-fluid>div {
+        flex: 0 0 calc(33.3% - 1rem);
+    }
+}
+
+@media (min-width: 992px) {
+    .footer .container-fluid>div {
+        flex: 0 1 calc(20%);
+    }
+}
